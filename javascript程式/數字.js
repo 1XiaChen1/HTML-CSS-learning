@@ -1,0 +1,22 @@
+//數字與數字的用法
+document.write("數字顯示");
+document.write(3.14159265+"<br/>");
+document.write("加減乘除");
+document.write(100+2+"  ",100-2+"  ",100*2+"  ",100/2+"<br/>");
+document.write("先乘除後加減 ");
+var ad = 100 ;
+document.write(2+2*ad +"<br/>");
+document.write("取餘數");
+document.write(9%2 +"<br/>");
+document.write("取絕對值");
+document.write(Math.abs(-5.12) +"<br/>");
+document.write("取最大值");
+document.write(Math.max(-1,2,3,4,11) +"<br/>");
+document.write("取最小值");
+document.write(Math.min(-1,2,3,4,11) +"<br/>");
+document.write("開根號");
+document.write(Math.sqrt(64) +"<br/>");
+document.write("0~1隨機亂數");
+document.write(Math.random() +"<br/>");
+document.write("0~10隨機亂數");
+document.write(Math.round(Math.random()*10));

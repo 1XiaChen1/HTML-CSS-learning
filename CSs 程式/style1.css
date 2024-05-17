@@ -1,0 +1,29 @@
+@keyframes change-color {
+   /*設定from to是從該顏色自動變到該另外一個顏色 from {background-color: red;}
+    to {background-color: blue;}*/
+    /*如果是用趴數設定就是以時間區分該甚麼時候跑到該顏色跟位置*/
+    0% {background-color: red;top:10px;left: 10px;}
+    20% {background-color: orange;top:20px;left: 20px;}
+    40% {background-color: yellow;top:30px;left: 30px;}
+    60% {background-color: green;top:40px;left: 40px;}
+    80% {background-color: blue;top:50px;left: 50px;}
+    100% {background-color: purple;top:60px;left: 60px;}
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    position: relative;
+}
+
+.box-animation:hover {
+    /*先是寫一個animation的名字引入*/
+    animation-name:change-color;
+    /*duration是定義這個動畫所要跑的秒數*/
+    animation-duration:2s;
+    /*iteration-count是在定義這個動畫要跑幾次，設定成infinite就是跑無限次*/
+    animation-iteration-count:2;
+    /*設定延遲時間*/
+    animation-delay:1s;
+}
